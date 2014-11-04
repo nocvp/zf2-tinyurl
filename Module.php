@@ -5,7 +5,7 @@
  * Time: 13:47
  */
 
-namespace NocMed;
+namespace NocMed\TinyUrl;
 
 class Module implements
     \Zend\ModuleManager\Feature\ConfigProviderInterface
