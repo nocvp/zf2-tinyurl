@@ -44,7 +44,9 @@ class TinyUrl extends AbstractHelper {
     /**
      * @return mixed
      */
-    public function alphaID() {
-        return $this->getServiceLocator()->get('noc-med.tinyurl');
+    public function alphaID($in, $toNum = false, $padUp = false, $passKey = null) {
+        $tinyUrlService = $this->getServiceLocator()->get('noc-med.tinyurl');
+        
+        return $tinyUrlService->alphaID($in, $toNum, $padUp, $passKey);
     }
 } 
