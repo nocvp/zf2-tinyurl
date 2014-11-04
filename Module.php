@@ -8,21 +8,8 @@
 namespace NocMed;
 
 class Module implements
-    \Zend\ModuleManager\Feature\ConfigProviderInterface,
-    \Zend\ModuleManager\Feature\AutoloaderProviderInterface
+    \Zend\ModuleManager\Feature\ConfigProviderInterface
 {
-    /**
-     * @see \Zend\ModuleManager\Feature\AutoloaderProviderInterface::getAutoloaderConfig()
-     * @return array
-     */
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\ClassMapAutoloader' => array(
-                __DIR__ . DIRECTORY_SEPARATOR . 'autoload_classmap.php'
-            )
-        );
-    }
 
     /**
      * @return array
