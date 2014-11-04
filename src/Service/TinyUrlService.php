@@ -7,32 +7,29 @@
 
 namespace NocMed\TinyUrl\Service;
 
-use Zend\ServiceManager\ServiceLocatorAwareInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+class TinyUrlService {
 
-class TinyUrlService implements ServiceLocatorAwareInterface {
-
-    public $serviceLocator;
+    public $configs;
 
     /**
-     * @return ServiceLocatorInterface
+     * @return mixed
      */
-    public function getServiceLocator()
+    public function getConfigs()
     {
-        return $this->serviceLocator;
+        return $this->configs;
     }
 
     /**
-     * @param ServiceLocatorInterface $serviceLocator
+     * @param mixed $configs
      */
-    public function setServiceLocator(ServiceLocatorInterface $serviceLocator)
+    public function setConfigs($configs)
     {
-        $this->serviceLocator = $serviceLocator;
+        $this->configs = $configs;
     }
 
     public function alphaID($in, $toNum = false, $padUp = false, $passKey = null)
     {
-        $configs = $this->getServiceLocator()->get('config');
+        $configs = $this->getConfigs();
         if (empty($configs['noc-med-zf2-tinyurl']) || empty($configs['noc-med-zf2-tinyurl']['index'])) {
             throw new \Exception('index config is required');
         }

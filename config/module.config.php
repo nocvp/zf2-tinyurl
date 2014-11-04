@@ -11,16 +11,14 @@ return array(
     ),
     'view_helpers' => array(
         'factories' => array(
-            'NocMed\TinyUrlHelper' => function ($sm) {
+            'NocMed\TinyUrl' => function ($sm) {
                 return new \NocMed\TinyUrl\View\Helper\TinyUrl($sm->getServiceLocator());
             },
         ),
     ),
     'service_manager' => array(
         'factories' => array(
-            'NocMed\TinyUrlService' => function ($sm) {
-                return new \NocMed\TinyUrl\Service\TinyUrlService();
-            },
+            'NocMed\TinyUrl' => 'NocMed\TinyUrl\Factory\TinyUrlFactory',
         ),
     ),
 );
