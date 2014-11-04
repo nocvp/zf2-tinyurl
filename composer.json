@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "NocMed\\TinyUrl": "src"
+            "NocMed\\TinyUrl": "src/"
         },
         "classmap" : ["Module.php"]
     }
