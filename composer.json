@@ -14,7 +14,7 @@
         "zendframework/zendframework": "2.*@stable"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "NocMed\\TinyUrl\\": "src/"
         },
         "classmap" : ["Module.php"]
