@@ -5,7 +5,7 @@
  * Time: 14:15
  */
 
-namespace TinyUrl\Service;
+namespace NocMed\TinyUrl\Service;
 
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;

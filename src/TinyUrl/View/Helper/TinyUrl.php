@@ -4,7 +4,7 @@
  * Date: 4.11.14
  * Time: 14:29
  */
-namespace TinyUrl\View\Helper;
+namespace NocMed\TinyUrl\View\Helper;
 
 use Zend\View\Helper\AbstractHelper;
 use Zend\ServiceManager\ServiceLocatorInterface;
