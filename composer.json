@@ -17,6 +17,6 @@
         "psr-0": {
             "NocMed\\TinyUrl": "src/"
         },
-        "classmap" : ["Module.php"]
+        "classmap" : ["./Module.php"]
     }
 }
