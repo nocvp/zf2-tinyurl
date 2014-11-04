@@ -57,15 +57,15 @@ Installation
 	
 	/* @var $serviceManager \Zend\ServiceManager\ServiceLocatorInterface */	
 	
-   	$tinyUrl = $serviceManager->get('NocMed\TinyUrlService');
-   	$tinyUrl->alphaID(907492350932095432);
+   	$tinyUrl = $serviceManager->get('noc-med.tinyurl');
+   	$tinyUrl->alphaID(907492350932095432); // received bfcuhKfMqt4
    	```
     
 2. Call TinyUrl in a view
 
  	```php
  	
-   	$tinyUrl = $this->plugin('NocMed\TinyUrlHelper');
-   	$tinyUrl->alphaID(907492350932095432);
+   	$tinyUrl = $this->plugin('noc-med.tinyurl');
+   	$tinyUrl->alphaID(907492350932095432); // received bfcuhKfMqt4
    	```
    	
